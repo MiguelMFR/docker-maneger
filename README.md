@@ -19,6 +19,8 @@ Retorna uma lista de todos os containers Docker.
 **Exemplo:**
 GET http://localhost:8080/api/containers
 
+---
+
 ### Listar todas as imagens
 `GET /api/images`
 
@@ -26,6 +28,8 @@ Retorna uma lista de todas as imagens Docker.
 
 **Exemplo:**
 GET http://localhost:8080/api/images
+
+---
 
 ### Filtrar uma imagem pelo nome
 `GET /api/images/filter`
@@ -35,10 +39,7 @@ Retorna informações de uma imagem específica filtrada pelo nome.
 **Exemplo:**
 GET http://localhost:8080/api/images/filter?name=<image_name>
 
-**Parâmetro:**
-| Parâmetro | Tipo   | Descrição                    |
-|-----------|--------|------------------------------|
-| name      | string | Não obrigatório. O nome da imagem. |
+---
 
 ### Criar um container
 `POST /api/containers`
@@ -47,6 +48,8 @@ Cria um novo container a partir de uma imagem. O nome da imagem deve ser passado
 
 **Exemplo:**
 POST http://localhost:8080/api/containers?image=<image_name>
+
+---
 
 ### Iniciar um container
 `POST /api/containers/{id}/start`
@@ -58,6 +61,8 @@ POST http://localhost:8080/api/containers/{id}/start
 
 *Substitua `{id}` pelo ID do container.*
 
+---
+
 ### Parar um container
 `POST /api/containers/{id}/stop`
 
@@ -67,6 +72,8 @@ Para um container em execução.
 POST http://localhost:8080/api/containers/{id}/stop
 
 *Substitua `{id}` pelo ID do container.*
+
+---
 
 ### Deletar um container
 `DELETE /api/containers/{id}/delete`
@@ -79,6 +86,8 @@ DELETE http://localhost:8080/api/containers/{id}/delete
 markdown
 Copiar código
 *Substitua `{id}` pelo ID do container.*
+
+---
 
 ## Pré-requisitos
 
