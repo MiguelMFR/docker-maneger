@@ -37,7 +37,7 @@ GET http://localhost:8080/api/images
 Retorna informações de uma imagem específica filtrada pelo nome.
 
 **Exemplo:**
-GET http://localhost:8080/api/images/filter?name=<image_name>
+GET http://localhost:8080/api/images/filter?filterName=<image_name>
 
 ---
 
@@ -47,7 +47,7 @@ GET http://localhost:8080/api/images/filter?name=<image_name>
 Cria um novo container a partir de uma imagem. O nome da imagem deve ser passado como um Query Parameter.
 
 **Exemplo:**
-POST http://localhost:8080/api/containers?image=<image_name>
+POST http://localhost:8080/api/containers?imageName=<image_name>
 
 ---
 
